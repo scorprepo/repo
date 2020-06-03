@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1110" type="dialog">
+	<onunload>SetFocus(50)</onunload>
+	<defaultcontrol>1115</defaultcontrol>
+	<controls>
+		<control type="image">
+			<width>100%</width>
+			<height>100%</height>
+			<texture diffuse="overlays/blank.png">colors/white70.png</texture>
+		</control>
+		<control type="group">
+			<include>WindowSlide</include>
+			<centerleft>50%</centerleft>
+			<top>50</top>
+			<width>350</width>
+			<height>580</height>
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture diffuse="overlays/blank.png">colors/white70.png</texture>
+				<bordertexture>overlays/panel.png</bordertexture>
+				<bordersize>15</bordersize>
+			</control>
+			<control type="image">
+				<width>100%</width>
+				<height>80</height>
+				<texture diffuse="overlays/blank.png">colors/grey.png</texture>
+				<bordersize>15</bordersize>
+			</control>
+			<control type="label">
+				<top>20</top>
+				<width>350</width>
+				<height>80</height>
+				<align>center</align>
+				<font>font40</font>
+				<label>Set View: $INFO[Container.Content]</label>
+			</control>
+			<control type="list" id="1115">
+				<left>50</left>
+				<top>80</top>
+				<width>250</width>
+				<itemlayout width="250" height="60">
+					<control type="label">
+						<left>10</left>
+						<width>250</width>
+						<height>40</height>
+						<font>font35r</font>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout width="250" height="60">
+					<control type="image">
+						<width>250</width>
+						<height>40</height>
+						<align>center</align>
+						<texture border="5">buttons/button-alt-nofo.png</texture>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<width>250</width>
+						<height>40</height>
+						<font>font35r</font>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>List</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(50)</onclick>
+						<onclick>SetFocus(50)</onclick>
+					</item>
+					<item>
+						<label>Poster</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(52)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<visible>!Container.Content(episodes)</visible>
+					</item>
+					<item>
+						<label>Shift</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(53)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<visible>!Container.Content(episodes)</visible>
+					</item>
+					<item>
+						<label>InfoWall</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(54)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(seasons)</visible>
+					</item>
+					<item>
+						<label>Wide List</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(55)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<visible>!Container.Content(seasons)</visible>
+					</item>
+					<item>
+						<label>Wall</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>Container.SetViewMode(500)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<visible>!Container.Content(seasons)</visible>
+					</item>
+					<item>
+						<label>Cancel</label>
+						<onclick>Dialog.Close(1110)</onclick>
+						<onclick>SetFocus(50)</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+	</controls>
+</window>

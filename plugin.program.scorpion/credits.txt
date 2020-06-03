@@ -1,0 +1,10 @@
+Credits to all developers that some of the code came from
+FireTvGuru   : Kodi 18 Leia Fix
+][NT3L][G3NC][ :  For APK Install code and Force Close Fix
+TVAddons.ag    :  Scrollbar Images and Source for dependencies
+Kodi Team      :  Kodi Log Uploader(Added support for forks and email log url)
+Sean Poyser    :  YouTube module
+EchoCoder      :  Help with Addons27.db
+Surfacingx     :  Creator of the Wizard
+
+
