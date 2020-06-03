@@ -18,10 +18,11 @@ li{
 
 h1{
 	float: left;
-	font-size: 40px;
+	font-size: 60px;
 	color: #01b7c2;
 	margin-top: -10px;
 	margin-right: 10px;
+	text-shadow: 1px 1px 3px black;
 } 
 
 .nav-btn {
