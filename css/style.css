@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre&display=swap');
+
+body {
+	background-image: url(https://sffscorpion.com/vault/images/icon.png);
+	background-repeat: no-repeat;
+	/* background-position: 50% top; */
+	font-family: 'Proza Libre', Arial, sans-serif;
+	background-color: #2b2b2b;
+    background-position: 10%;
+    background-attachment: fixed;
+    background-size: 40%;}
+
+.header{
+	padding-bottom: 50px;
+	text-align: center;
+}
+li{
+	list-style-type: none;
+}
+
+
+
+
+h1{
+	float: left;
+	font-size: 40px;
+	color: #01b7c2;
+	margin-top: -10px;
+	margin-right: 10px;
+} 
+
+.nav-btn {
+	/* display: inlign-block; */
+	width: 100px;
+	height:30px;
+	font-family: 'Proza Libre', sans-serif;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 300;
+	outline: none;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 40px;
+	margin: 10px;
+	background-color: rgba(0, 88, 102, 0.3);
+	color: #00ccff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 255, 255, 0.7);
+	box-shadow: 0 -1px 0 rgba(0, 193, 255, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 10px rgba(0, 193, 255, 0.1), 0 0 10px rgba(0, 193, 255, 0.1);
+}
+
+.main{
+	position: absolute;
+	width: 80%;
+	margin-top: 140px;
+	margin-left: 10%;
+	text-align: center;
+}
+
+h2{
+	text-align: center;	
+	margin-bottom: 20px;
+	color: #01b7c2;
+} 
+
+a{ 
+
+	display: block;
+	max-width: 550px;
+	height: 50px;
+	margin: auto;	
+	text-decoration: none;
+	margin-bottom: 20px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 50px;
+	background-color: rgba(0, 88, 102, 0.3);
+	color: #00ccff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 255, 255, 0.7);
+	box-shadow: 0 -1px 0 rgba(0, 193, 255, 0.2), 1 1 1 1px rgba(0, 88, 102, 0.3), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 10px rgba(0, 193, 255, 0.1), 0 0 10px rgba(0, 193, 255, 0.1);
+}
+
+#home #nav-home,
+#zips #nav-zips,
+#tt2 #nav-tt2, a:hover {
+	color: #00ccff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 255, 255, 0.8);
+	box-shadow: 0 -1px 0 rgba(0, 193, 255, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05), 0 0 10px rgba(0, 193, 255, 0.5), 0 0 10px rgba(0, 193, 255, 0.5);
+}
+
+.hidden{
+	position: absolute;
+	color: #2B2B2B;
+	text-decoration: none;
+	margin-top: 1000px;
+}
+
+@media (min-width: 768px){
+
+	h1{
+		width: 100%;
+		text-align: center;	
+		font-size: 35px;
+		margin-bottom: 20px;
+		color: #01b7c2;
+} 
+
+	.nav-btn {
+		float: none;
+		display: inline-block;
+		width: 100px;
+			margin-top: 20px;
+		position: relative;
+	}
+
+	h2{
+		position: absolute;
+		width: 100%;
+		margin: auto;
+		text-align: center;	
+		font-size: 20px;
+		margin-top: -130px;
+		margin-bottom: 20px;
+		color: #01b7c2;
+} 
+	
+}
+
+@media (max-width: 400px){
+	
+	h2{
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	text-align: center;	
+	font-size: 20px;
+	margin-top: -130px;
+	margin-bottom: 20px;
+	color: #01b7c2;
+} 
+
+	.nav-btn {
+	float: none;
+	display: inline-block;
+	width: 80px;
+	margin-top: 20px;
+	position: relative;
+	top
+}
+}
