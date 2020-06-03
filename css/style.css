@@ -3,7 +3,7 @@
 body {
 	background-image: url(https://sffscorpion.com/vault/images/icon.png);
 	font-family: 'Proza Libre', Arial, sans-serif;
-   	background-size: cover;}
+   	background-size: contain;}
 	background-repeat: no-repeat;
 .header{
 	padding-bottom: 50px;
