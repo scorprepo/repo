@@ -19,10 +19,6 @@ li{
 	list-style-type: none;
 }
 
-.t1{
-
-} 
-
 .nav-btn {
 	/* display: inlign-block; */
 	width: 100px;
@@ -54,6 +50,7 @@ h2{
 	text-align: center;	
 	margin-bottom: 20px;
 	color: #01b7c2;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 } 
 
 a{ 
