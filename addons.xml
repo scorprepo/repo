@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.scorpion" name="Scorpion Wizard" version="1.9.5" provider-name="Pick">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Scorpion Wizard</summary>
+    <description lang="en">Scorpion Wizard allows you to get all the van candy your punk ass can handle.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.scorpion" version="3.0.0" name="Scorpion" provider-name=" Pick">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.scorpion.artwork" />
+		<import addon="script.scorpion.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.js2py" />
+        <import addon="script.module.pyjsparser" />
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="scorpion.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Scorpion: The very best in van candy.</summary>
+		<description>Freshness Guaranteed</description>
+        <disclaimer>The author of this addon does not give a f--ck what you do.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+
+<addon id="repository.scorpion" name="Scorpion Repository" version="3.0" provider-name="Pick">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository">
+		<dir>
+			<info compressed="false">https://sffscorpion.com/addons/addons.xml</info>
+			<checksum>https://sffscorpion.com/addons/addons.xml.md5</checksum>
+			<datadir zip="true">https://sffscorpion.com/addons</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+		</dir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+		<summary lang="en">Scorpion: The very best in van candy.</summary>
+		<description>Freshness Guaranteed</description>
+        <disclaimer lang="en">The author of this addon does not give a f--ck what you do.</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+    </extension>
+</addon>
+
+<addon id="script.scorpion.artwork" version="3.0.0" name="Scorpion Artwork" provider-name=" Pick">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Scorpion: The very best in van candy.</summary>
+		<description>Freshness Guaranteed</description>
+        <disclaimer>The author of this addon does not give a f--ck what you do.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.scorpion.metadata" version="3.0" name="Scorpion Metadata" provider-name=" Pick">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Scorpion: The very best in van candy.</summary>
+		<description>Freshness Guaranteed</description>
+        <disclaimer>The author of this addon does not give a f--ck what you do.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="skin.scorpion" name="Scorpion Skin" version="3.0" provider-name="Pick">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0" />
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+        <import addon="resource.images.studios.white"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The very best in van candy.</summary>
+		<description>Freshness Guaranteed.</description>
+        <disclaimer>The author of this addon does not give a f--ck what you do.</disclaimer>
+		<license>CC BY-NC-SA 4.0</license>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+    		<screenshot>resources/screenshot-01.jpg</screenshot>
+    		<screenshot>resources/screenshot-02.jpg</screenshot>
+    		<screenshot>resources/screenshot-03.jpg</screenshot>
+    		<screenshot>resources/screenshot-04.jpg</screenshot>
+    		<screenshot>resources/screenshot-05.jpg</screenshot>
+    		<screenshot>resources/screenshot-06.jpg</screenshot>
+    		<screenshot>resources/screenshot-07.jpg</screenshot>
+    		<screenshot>resources/screenshot-08.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+</addons>
