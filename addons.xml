@@ -53,9 +53,9 @@
   </requires>
 	<extension point="xbmc.addon.repository">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/scorprepo/repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/scorprepo/repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/scorprepo/repo</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/scorprepo/repo/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/scorprepo/repo/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/scorprepo/repo/master/addons</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
