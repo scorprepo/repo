@@ -68,6 +68,11 @@
             <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
             <hashes>false</hashes>
 		</dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml</info>
+	        <checksum>https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml.md5</checksum>
+	        <datadir zip="true">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/</datadir>
+        </dir>
 	</extension>
     <extension point="xbmc.addon.metadata">
 		<summary lang="en">Scorpion: The very best in van candy.</summary>
