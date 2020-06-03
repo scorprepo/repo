@@ -9,13 +9,12 @@ body {
 }
 .header{
 	text-align: center;
+	margin-bottom: 20px;
 }
+
 li{
 	list-style-type: none;
 }
-
-
-
 
 h1{
 	float: left;
